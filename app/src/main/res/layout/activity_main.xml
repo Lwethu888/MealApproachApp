@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="Enter time of the day"
         android:textSize="16sp"
-        android:layout_marginButtom="8dp"/>
+<!--        android:layout_marginButtom="8dp"/>-->
 
     <EditText
         android:id="@+id/editTextTime"
