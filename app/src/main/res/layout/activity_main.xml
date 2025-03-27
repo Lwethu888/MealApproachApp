@@ -8,6 +8,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center"
+    android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,8 +16,9 @@
         android:layout_height="wrap_content"
         android:text="Enter time of the day"
         android:textSize="16sp"
-<!--        android:layout_marginButtom="8dp"/>-->
+        android:layout_marginBottom="8dp"/>
 
+<!--    User input-->
     <EditText
         android:id="@+id/editTextTime"
         android:layout_width="wrap_content"
@@ -25,14 +27,15 @@
         android:textSize="16sp"
         android:inputType="text"/>
 
+<!--     Button to display suggested meal-->
     <Button
-        android:id="@+id/buttonSuggestionMeal"
+        android:id="@+id/buttonDisplayMeal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Suggest Meal"
+        android:text="Display Meal"
         android:layout_marginTop="10dp"/>
 
-
+<!--    Reset Button-->
     <Button
         android:id="@+id/buttonReset"
         android:layout_width="wrap_content"

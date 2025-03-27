@@ -20,12 +20,12 @@ class MainActivity : AppCompatActivity() {
 
         // Reference to UI elements
         val editTextTime = findViewById<EditText>(R.id.editTextTime)
-        val buttonSuggestMeal = findViewById<Button>(R.id.buttonSuggestionMeal)
+        val buttonDisplayMeal = findViewById<Button>(R.id.buttonDisplayMeal)
         val buttonReset = findViewById<Button>(R.id.buttonReset)
         val textViewMealSuggestion = findViewById<TextView>(R.id.textViewMealSuggestion)
 
         // Button click event for meal suggestion
-        buttonSuggestMeal.setOnClickListener {
+        buttonDisplayMeal.setOnClickListener {
             val timeOfDay = editTextTime.text.toString().trim().lowercase()
 
             if (timeOfDay.isNotEmpty()) {
@@ -47,19 +47,6 @@ class MainActivity : AppCompatActivity() {
             Log.d("MealSuggestion", "Input and suggestion reset")
         }
 
-        // Function to determine meal suggestion based on time of day
-         fun getMealSuggestion(timeOfDay: String): String {
-            return when (timeOfDay) {
-                "morning" -> "Eggs (Breakfast)"
-                "mid-morning" -> "Fruit (Mid-Morning Snack)"
-                "afternoon" -> "Sandwich (Lunch)"
-                "afternoon snack", "mid-afternoon" -> "Cake (Afternoon Snack)"
-                "dinner" -> "Pasta (Main Course)"
-                "after dinner", "dessert" -> "Ice Cream (Dessert)"
-                else -> "Invalid time of day! Please try: Morning, Mid-Morning, Afternoon, Dinner, Dessert."
-            }
-        }
-
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -67,4 +54,18 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+    // Function to determine meal suggestion based on time of day
+   private fun getMealSuggestion(timeOfDay: String): String {
+        return when (timeOfDay) {
+            "morning" -> "Eggs and bacon (Breakfast)"
+            "mid-morning" -> "Fruit Salad (Mid-Morning Snack)"
+            "afternoon" -> "Chicken wrap (Lunch)"
+            "afternoon snack", "mid-afternoon" -> "Chips (Afternoon Snack)"
+            "dinner" -> "Pap and braai meat (Main Course)"
+            "after dinner", "dessert" -> "Cake (Dessert)"
+            else -> "Invalid time of day! Please try: Morning, Mid-Morning, Afternoon, Dinner, Dessert."
+        }
+    }
+
 }
