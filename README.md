@@ -1,20 +1,37 @@
 # Meal Approach App
-1. Purpose of the App
-This android app helps users quickly decide what to eat based on the time of the day. Its designed for busy individuals who struggle with meal choices. By entering the time of day, the app suggests an appropriate meal option.
-#Key Features:
-User-friendly interface - Simple text input and meal display.
-Predefined meal suggestions - Based on breakfast, lunch, dinner and snacks.
-Reset functioning - Clear input and suggestions easily.
-Error handling - Alerts for invalid input
-Version control - GitHub repository for collaboration
-Automated CI/CD - GitHub Actions for testing and building
-#Design Consideration
-User Interface (UI)
-Input Field: Users enter the time of day (Morning, Afternoon, Dinner).
-Display Area: Suggested meal is shown based on input.
-Reset Button: Clears inpution and meal suggestion.
-Error Messages: Display alerts for incorrect input.
-App Logic
-The app uses if statements to determine the meal based on user input:
-if (timeOfDay == "Morning") {
-meal
+## 📌 Introduction
+The **Meal Approach App** is an Android application built using **Kotlin** in **Android Studio**. It helps users decide what to eat based on the time of day. The app suggests meal options for **breakfast, snacks, lunch, and dinner**.
+
+---
+
+## 🚀 Features
+- **User Input**: Enter the time of day.
+- **Meal Suggestions**: Displays a suggested meal based on the input.
+- **Reset Functionality**: Clears the input field and suggestion.
+- **Error Handling**: Provides feedback for invalid input.
+- **Styled UI**: Includes a gradient background for better aesthetics.
+- **GitHub Actions**: Automated testing and build checks.
+
+---
+
+## 🎨 User Interface
+The app consists of:
+1. **Text Input**: Users enter a time of day (e.g., "Morning").
+2. **Suggestion Display**: Shows a recommended meal.
+3. **Reset Button**: Clears the input and resets the suggestion.
+
+---
+
+## 🛠️ Tech Stack
+- **Programming Language**: Kotlin
+- **IDE**: Android Studio
+- **Version Control**: Git & GitHub
+- **CI/CD**: GitHub Actions
+
+---
+
+## 🖥️ Setup & Installation
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/Lwethu888/MealApproachApp
+## Video link:
