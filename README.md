@@ -1,19 +1,37 @@
-# Meal Suggestion App
-This is an Android app helps users decide on a buzy day what to eat bsed on the time of day.
+# Meal Approach App
+## 📌 Introduction
+The **Meal Approach App** is an Android application built using **Kotlin** in **Android Studio**. It helps users decide what to eat based on the time of day. The app suggests meal options for **breakfast, snacks, lunch, and dinner**.
 
-# App Features
-- Simple UI for entering time of day.
-- Meal suhgestions based on user input.
-- Reset button to clear user input and meals displayed
-- Error handling for incorrect user input.
+---
 
-  # Installation
-  1. Cone this repo: git clone https://github.com/Lwethu888/MealApproachApp.git
-  2. Open in Android Studio.
-  3. Build and run the app.
+## 🚀 Features
+- **User Input**: Enter the time of day.
+- **Meal Suggestions**: Displays a suggested meal based on the input.
+- **Reset Functionality**: Clears the input field and suggestion.
+- **Error Handling**: Provides feedback for invalid input.
+- **Styled UI**: Includes a gradient background for better aesthetics.
+- **GitHub Actions**: Automated testing and build checks.
 
-  ## GitHub Actions
-  - Automated build process runs on every push to ensure maintanability.
+---
 
-  ## Demo
-YouTube video link: 
+## 🎨 User Interface
+The app consists of:
+1. **Text Input**: Users enter a time of day (e.g., "Morning").
+2. **Suggestion Display**: Shows a recommended meal.
+3. **Reset Button**: Clears the input and resets the suggestion.
+
+---
+
+## 🛠️ Tech Stack
+- **Programming Language**: Kotlin
+- **IDE**: Android Studio
+- **Version Control**: Git & GitHub
+- **CI/CD**: GitHub Actions
+
+---
+
+## 🖥️ Setup & Installation
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/Lwethu888/MealApproachApp
+## Video link:
