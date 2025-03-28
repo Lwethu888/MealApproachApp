@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         val buttonReset = findViewById<Button>(R.id.buttonReset)
         val textViewMealSuggestion = findViewById<TextView>(R.id.textViewMealSuggestion)
 
+        // Code Reference: https://tms-outsource.com/blog/posts/how-to-build-android-apps-with-kotlin/
         // Button click event for meal suggestion
         buttonDisplayMeal.setOnClickListener {
             val timeOfDay = editTextTime.text.toString().trim().lowercase()
@@ -54,6 +55,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+    // Code Reference: https://stackoverflow.com/questions/45108239/how-to-create-a-button-in-kotlin-that-opens-a-new-activity-android-studio
 
     // Function to determine meal suggestion based on time of day
    private fun getMealSuggestion(timeOfDay: String): String {
