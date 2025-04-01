@@ -45,7 +45,6 @@ class MainActivity : AppCompatActivity() {
         buttonReset.setOnClickListener {
             editTextTime.text.clear()
             textViewMealSuggestion.text = "Meal will appear here"
-            Log.d("MealSuggestion", "Input and suggestion reset")
         }
 
 
